@@ -1,0 +1,22 @@
+Parallel Reduction:
+Theory:
+Parallel Reduction is a technique used in parallel computing to perform associative operations, such as addition, multiplication, minimum, maximum, etc., in a parallel manner. It involves dividing the data into smaller chunks, performing the operation on each chunk independently, and then combining the results to obtain the final output.
+
+Implementation:
+Parallel Min Operation:
+Divide the array into smaller chunks.
+Each thread finds the minimum value in its chunk.
+Combine the minimum values from each chunk to find the overall minimum.
+Parallel Max Operation:
+Similar to the Min operation but finds the maximum value.
+Parallel Sum Operation:
+Divide the array into smaller chunks.
+Each thread calculates the sum of elements in its chunk.
+Combine the partial sums from each chunk to find the total sum.
+Parallel Average Operation:
+Calculate the sum of all elements in parallel.
+Divide the sum by the total number of elements to find the average.
+Performance Measurement:
+Measure the execution time of parallel reduction operations.
+Compare the performance with sequential reduction operations to assess speedup.
+Evaluate the scalability of the parallel implementation concerning the number of processor cores.

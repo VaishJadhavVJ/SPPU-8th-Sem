@@ -1,0 +1,33 @@
+Parallel Bubble Sort:
+Theory:
+Bubble Sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted.
+
+In Parallel Bubble Sort, we can parallelize the comparison and swapping operations across multiple threads. Each thread can handle a portion of the array, thereby reducing the overall sorting time.
+
+Implementation:
+Sequential Bubble Sort: This serves as the baseline. It performs the bubble sort algorithm sequentially.
+Parallel Bubble Sort:
+Divide the array into chunks, with each chunk assigned to a separate thread.
+Each thread performs bubble sort on its assigned chunk independently.
+After all threads complete sorting their chunks, a final pass of bubble sort is performed sequentially to ensure correctness.
+Performance Measurement:
+Measure the execution time of both sequential and parallel bubble sort implementations.
+Calculate the speedup achieved by the parallel implementation compared to the sequential one.
+Parallel Merge Sort:
+Theory:
+Merge Sort is a divide-and-conquer algorithm that divides the input array into smaller sub-arrays, sorts them independently, and then merges them to produce a sorted output.
+
+In Parallel Merge Sort, we can parallelize the divide, sort, and merge operations to exploit multi-core processors effectively.
+
+Implementation:
+Custom Merge Sort:
+Implement a standard recursive merge sort algorithm.
+Parallelize the sorting process by dividing the array into chunks and sorting each chunk concurrently using multiple threads.
+After sorting individual chunks, merge them sequentially to obtain the final sorted array.
+Performance Measurement:
+Measure the execution time of both single-threaded and multi-threaded merge sort implementations.
+Compare the performance metrics to evaluate the speedup achieved by the parallel approach.
+Performance Evaluation:
+Compare the execution times of sequential and parallel implementations for both bubble sort and merge sort.
+Calculate the speedup factor, which represents how many times faster the parallel implementation is compared to the sequential one.
+Analyze the scalability of the parallel implementations concerning the number of processor cores available.

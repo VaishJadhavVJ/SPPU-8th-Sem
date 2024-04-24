@@ -1,0 +1,15 @@
+Depth First Search (DFS):
+DFS is a graph traversal algorithm that explores as far as possible along each branch before backtracking. It is implemented using a stack data structure. The algorithm starts at the root node (or an arbitrary node for a graph) and explores as far as possible along each branch before backtracking.
+
+Sequential DFS: In the sequential version, DFS is implemented using recursion or a stack. The algorithm visits each vertex in the graph once, marking it as visited, and recursively explores all adjacent unvisited vertices until all vertices are visited.
+Parallel DFS: In the parallel version, DFS can be parallelized by exploring different branches of the graph concurrently. Each thread explores a separate branch of the graph using its own stack or recursion stack. Synchronization may be required to ensure that each vertex is visited only once.
+Breadth First Search (BFS):
+BFS is another graph traversal algorithm that explores all vertices at the present depth before moving on to the vertices at the next depth level. It is implemented using a queue data structure. The algorithm starts at the root node (or an arbitrary node for a graph) and explores all vertices at the current level before moving on to the next level.
+
+Sequential BFS: In the sequential version, BFS is implemented using a queue. The algorithm visits each vertex in the graph once, marking it as visited, and explores all adjacent unvisited vertices at the current level before moving on to the next level.
+Parallel BFS: In the parallel version, BFS can be parallelized by exploring different levels of the graph concurrently. Each thread explores a separate level of the graph using its own queue. Synchronization may be required to ensure that each vertex is visited only once and that vertices at the same level are explored concurrently.
+OpenMP:
+OpenMP is an API for parallel programming in shared-memory systems, primarily used with C, C++, and Fortran. It provides directives and libraries for parallelizing code across multiple threads.
+
+Parallelism: OpenMP allows programmers to specify parallel regions in the code using parallel directives. Within these regions, multiple threads execute the code concurrently, with each thread executing a separate task.
+Synchronization: OpenMP provides constructs for synchronization, such as critical sections, atomic operations, and barrier synchronization, to coordinate access to shared resources and ensure correct behavior in parallel programs.
